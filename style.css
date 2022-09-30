@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i');
+
+/*Rules for sizing the icon*/
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
 .header{
     background-color: #ffffff;
     padding-bottom: 10px;
@@ -9,4 +16,99 @@
     font-size: 40px;
     font-weight: 600;
     margin: 0;
+}
+
+* Detailed Image */
+/* -------------- */
+
+.detailed-photo img {
+  display: block;
+  width: 100%;
+}
+
+.detailed-photo .photo-info {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.detailed-photo .like-button {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.detailed-photo .caption {
+  font-size: 30px;
+  font-weight: lighter;
+  font-style: italic;
+  margin: 0 0 10px 0;
+}
+
+.detailed-photo .detailed-photo + .detailed-photo {
+  margin-top: 50px;
+}
+
+@media (min-width: 650px) {
+  body {
+    background: #f9f9f9;
+  }
+
+  /* Header */
+  /* ------ */
+
+  .header {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 60px;
+  }
+
+  .header-nav {
+    margin: 0 auto;
+    padding: 0;
+    width: 600px;
+  }
+
+  .header-nav .nav-brand {
+    font-size: 40px;
+    height: 55px;
+  }
+
+  .header-nav .nav-brand:before {
+    font-size: 32px;
+    margin-right: 30px;
+  }
+
+  .header-nav .nav-brand:after {
+    left: 50px;
+  }
+
+  /* Shared */
+  /* ------ */
+
+  .content-flow {
+    margin: 0 auto 60px;
+  }
+
+  .content-flow {
+    width: 600px;
+  }
+
+  /* Detailed Image */
+  /* -------------- */
+
+  .detailed-photo {
+    box-shadow: 0 0 2px #ccc;
+    background: #fff;
+  }
+
+  .detailed-photo .photo-info {
+    padding-bottom: 10px;
+  }
+
+  /* Flow */
+  /* ---- */
+
+  .content-flow .detailed-photo + .detailed-photo {
+    margin-top: 60px;
+    padding-top: 0;
+  }
 }
